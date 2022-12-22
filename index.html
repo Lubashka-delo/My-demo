@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">  
+        <script src="/scripts/upp.js"></script>   
+        <title>Portfolio</title>
+    </head>
+    <body>
+        
+        <header  class="header">
+            <div class="container">
+                <div class="item">
+                    <img class="photo" src="img/avatar.jpg" alt="My photo">
+                    <div class="desc">
+                        <h1>Liubov BELOVA</h1>
+                        <p class="description">Frontend developer</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section>
+                    <h2>Objective</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta. Placeat hic maiores, perferendis possimus voluptatum nemo modi recusandae consequuntur? Temporibus minima recusandae rerum necessitatibus! Eum error dignissimos cumque obcaecati.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta. Placeat hic maiores, perferendis possimus voluptatum nemo modi recusandae consequuntur? Temporibus minima recusandae rerum necessitatibus! Eum error dignissimos cumque obcaecati.</p>
+                </section>
+
+                <section>
+                    <h2>Experience</h2>
+                    <div class="wrapper">
+                        <p class="yard">2019-present</p>
+                        <div>
+                            <h3>Web-studio 1</h3>                    
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta. Placeat hic maiores, perferendis possimus voluptatum nemo modi recusandae consequuntur? Temporibus minima recusandae rerum necessitatibus! Eum error dignissimos cumque obcaecati.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <p class="yard">2018-2019</p>
+                        <div>
+                            <h3>Zapravka</h3>                    
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta. Placeat hic maiores, perferendis possimus voluptatum nemo modi recusandae consequuntur? Temporibus minima recusandae rerum necessitatibus! Eum error dignissimos cumque obcaecati.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <p class="yard">1999-2018</p>
+                        <div>
+                            <h3>Gazeta</h3>                    
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta. Placeat hic maiores, perferendis possimus voluptatum nemo modi recusandae consequuntur? Temporibus minima recusandae rerum necessitatibus! Eum error dignissimos cumque obcaecati.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique modi magnam dicta ea, possimus quae. Voluptatem voluptate possimus mollitia quis, in exercitationem nihil ab corporis quaerat velit, blanditiis, perspiciatis consequatur.</p>
+                </section>
+                <section class="language">
+                    <h2>Language</h2>
+                    <ul class="language-list">
+                        <li class="language-item">English</li>
+                        <li  class="language-item">Russian</li>
+                    </ul>
+                </section>                
+            </div>
+
+            <form class="form" action="#" method="post" enctype="multipart/form-data">
+                <div class="wrap">
+                    <h2 class="title-form">Напишите мне</h2>
+                    <div class="send">
+                        <div>
+                            <label class="label" for="name">Имя:</label><br>
+                            <input class="input" type="text" id="name" placeholder="Ваше имя" tabindex="1">
+                        </div>
+
+                        <div>
+                            <label class="label" for="mail">Почта:</label><br>
+                            <input class="input" type="mail" id="mail" placeholder="Ваш e-mail" tabindex="2">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="label" for="message">Сообщение</label>
+                        <br>
+                        <textarea class="textarea" id="message" cols="25" rows="5"></textarea>
+                    </div>
+
+                    <div class="btn">
+                        <button type="submit"  tabindex="5">Отправить</button>
+                        <button type="reset"  tabindex="6">Очистить</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <!-- animation -->
+        <div class="animation">
+            <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+        </div>
+        <!-- -------------- -->
+        
+        <footer class="contacts">                
+            <div class="container">
+                <h2>Contacts</h2>
+                <ul class="list">
+                    <li>
+                        <a href="tel:+79040346791">+7 (904) 034-67-91</a>
+                    </li>
+                    <li>
+                        <a href="mailto: belova33@mail.ru">belova33@mail.ru</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com">Youtube channel</a>
+                    </li>
+                </ul>        
+               <div>
+                    <p class="rights">All rights reserved&copy;</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- for exemple -->
+
+
+        <h2>Что может сделать JavaScript?</h2>
+        <p>JavaScript может изменять значения атрибутов HTML.</p>
+        <p>В этом случае JavaScript изменяет значение атрибута src (источник) изображения.</p>
+
+        <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Включи свет</button>
+
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Выключи свет</button>
+        <!-- ++++++++++++++++++ -->
+
+        <script language="JavaScript">
+            alert("Привет, мир!");
+        </script>        
+    </body>
+</html>
